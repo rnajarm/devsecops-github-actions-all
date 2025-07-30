@@ -1,0 +1,13 @@
+# ZAP Scanning Rules
+# Format: action	id	name
+# Actions: IGNORE, WARN, FAIL
+# Example rules:
+IGNORE	10023	Information Disclosure - Debug Error Messages
+IGNORE	10027	Information Disclosure - Suspicious Comments
+WARN	10054	Cookie Without SameSite Attribute
+WARN	10020	X-Frame-Options Header Not Set
+FAIL	40018	SQL Injection
+FAIL	40019	SQL Injection - MySQL
+FAIL	40020	SQL Injection - Hypersonic SQL
+FAIL	40021	SQL Injection - Oracle
+FAIL	40022	SQL Injection - PostgreSQL

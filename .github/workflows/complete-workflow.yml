@@ -27,6 +27,8 @@ jobs:
       - name: RunSnyk to check for vulnerabilities
         uses: snyk/actions/maven@master
         continue-on-error: true
+        with:
+          args: --severity-threshold=high --json
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
   zap_scan:
